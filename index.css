@@ -224,3 +224,45 @@ body
 {
     display: none;
 } */
+
+.jokes-label::before
+{
+    content: '↻ Показать ещё';
+    cursor: pointer;
+}
+
+.jokes-label
+{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.jokes
+{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.jokes input
+{
+    display: none;
+}
+
+.joke-1,
+.joke-2,
+.joke-3,
+.joke-4,
+.joke-5
+{
+    display: none;
+}
+
+#joke-1-controller:checked ~ .joke-1,
+#joke-2-controller:checked ~ .joke-2,
+#joke-3-controller:checked ~ .joke-3,
+#joke-4-controller:checked ~ .joke-4,
+#joke-5-controller:checked ~ .joke-5
+{
+    display: block;
+}
