@@ -1,0 +1,226 @@
+.layout
+{
+    display: grid;
+    grid-template-columns: auto 300px 250px 250px auto;
+    grid-template-rows: 50px auto auto auto auto;
+    grid-template-areas: "s s s s s"
+                         "c d d e t"
+                         "a f f f t"
+                         "b y y y t"
+                         "b g h q t";
+    grid-gap: 10px;
+}
+
+.advertisement
+{
+    grid-area: y;
+}
+
+.user-info
+{
+    grid-area: s;
+}
+
+ul
+{
+    padding-left: 0;
+}
+
+.logo
+{
+    grid-area: a;
+    text-align: right;
+    margin: auto 0;
+}
+
+.city
+{
+    float: left;
+    color: #999;
+    grid-area: w;
+    margin-top: 8px;
+    padding: 0 18px;
+}
+
+.news-section
+{
+    grid-area: d;
+    margin-right: 20px;
+}
+
+.yandex-ad
+{
+    grid-area: e;
+    margin: 10px 0;
+}
+
+.navigation-links a
+{
+    font-size: 1.16em;
+}
+
+.navigation-links
+{
+    margin: 10px 0;
+}
+
+.navigation-links a:not(:first-child)
+{
+    margin-left: 20px;
+}
+
+.search-field
+{
+    grid-area: f;
+    margin: 30px 0;
+}
+
+.widgets-1
+{
+    grid-area: g;
+}
+
+.widgets-2
+{
+    grid-area: h;
+}
+
+.widgets-3
+{
+    grid-area: q;
+}
+
+.search-input
+{
+    width: 100%;
+    height: 32px;
+    border: 2px solid #ffdb4d;
+}
+
+.description
+{
+    color: #999;
+    font-size: 0.8em;
+}
+
+.secondary-link
+{
+    color: #6da2e1;
+}
+
+p
+{
+    margin: 6px 0;
+}
+
+li
+{
+    margin: 6px 0;
+}
+
+h2
+{
+    margin-bottom: 10px;
+}
+
+.auto-news
+{
+    /* max-height: 200px; */
+}
+
+a
+{
+    font-weight: 300;
+    color: #0054b9;
+    text-decoration: none;
+}
+
+.settings > input
+{
+    display: none;
+}
+
+.settings-panel
+{
+    position: absolute;
+    padding: 8px;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    display: none;
+    min-width: 200px;
+    right: -100%;
+}
+
+body > input
+{
+    display: none;
+}
+
+.show-settings-checkbox:checked ~ .settings-panel
+{
+    display: block;
+}
+
+.settings
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.mail-section
+{
+    float: right;
+    padding: 12px;
+    width: 152px;
+    box-shadow: 0 0 5px gray;
+}
+
+.first-red::first-letter
+{
+    color: red;
+}
+
+body
+{
+    font-size: 82.25%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.25;
+    margin-bottom: 100px;
+}
+
+.black-links
+{
+    font-weight: bold;
+}
+
+#show-services-dummy:checked ~ main .services-show,
+#show-jokes-dummy:checked ~ main .jokes-show,
+#show-tv-dummy:checked ~ main .tv-show,
+#show-auto-news-dummy:checked ~ main .auto-news-show,
+#show-weather-dummy:checked ~ main .weather-show,
+#show-traffic-dummy:checked ~ main .traffic-show,
+#show-map-dummy:checked ~ main .map-show,
+#show-poster-dummy:checked ~ main .poster-show
+{
+    display: block;
+}
+
+.settings-panel img
+{
+    height: 10px;
+}
+
+/* .services,
+.jokes,
+.tv,
+.auto-news,
+.weather,
+.traffic,
+.map,
+.poster
+{
+    display: none;
+} */

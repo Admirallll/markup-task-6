@@ -3,7 +3,162 @@
 <head>
     <meta charset="utf-8">
     <title>Задача «Морда»</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <input type="checkbox" id="show-services-dummy" checked>
+    <input type="checkbox" id="show-jokes-dummy" checked>
+    <input type="checkbox" id="show-tv-dummy" checked>
+    <input type="checkbox" id="show-auto-news-dummy" checked>
+    <input type="checkbox" id="show-weather-dummy" checked>
+    <input type="checkbox" id="show-traffic-dummy" checked>
+    <input type="checkbox" id="show-map-dummy" checked>
+    <input type="checkbox" id="show-poster-dummy" checked>
+    <main class="layout">
+        <section class="user-info">
+            <span class="city">Екатеринбург</span>
+            <section class="mail-section">
+                <p class="first-red"><span class="black-links">login</span></p>
+                <p>Почта <span class="black-links">138</span></p>
+            </section>
+            <section class="settings">
+                <input type="checkbox" id="show-settings" class="show-settings-checkbox">
+                <label for="show-settings">Настройки</label>
+                <section class="settings-panel">
+                    <label for="show-services-dummy">
+                        <img src="./images/full-checkbox.ico" class="services-show">
+                        <img src="./images/empty-checkbox.ico" class="services-hide">
+                        Посещаемое
+                    </label><br>
+                    <label for="show-jokes-dummy">Лучшие анекдоты</label>
+                </section>
+            </section>
+        </section>
+        <section class="logo">
+            <img src="./images/logo.svg">
+        </section>
+        <section class="news-section">
+            <header>
+                <h2><a href="#">Сейчас в СМИ</a> <a href="#" class="secondary-link">в Екатеринбурге</a></h2>
+                <span class="description">13 ноября, понедельник 16:57</span>
+            </header>
+            <ul>
+                <li>Школьник из ЯНАО рассказал в Бундестаге о «невинных солдатах вермахта»</li>
+                <li>Задержанный в Минске украинский журналист признался в шпионаже</li>
+                <li>Патриарх Кирилл предупредил о приближении конца света</li>
+                <li>Расплата Меркель: что показал кризис власти в Германии</li>
+                <li>МИД Украины направил Москве ноту протеста из-за визита Путина в Крым</li>
+            </ul>
+            <p>
+                <span class="black-links">USD ЦБ</span> 59,27 <span class="description">−0,36</span>
+                <span class="black-links">EUR ЦБ</span> 69,67 <span class="description">−0,69</span>
+                <span class="black-links">НЕФТЬ</span> 62,01 <span class="description">−1,16%</span>
+            </p>
+        </section>
+        <section class="yandex-ad">
+            <img src="./images/themes-ad.png">
+            <p>
+                <h2><a href="#">Красивые фоны для вашего браузера</a></h2>
+                Элементы Яндекса
+            </p>
+        </section>
+        <section class="advertisement">
+            <img src="./images/yandex-car.gif">
+        </section>
+        <section class="search-field">
+            <section class="navigation-links">
+                <a href="#">Видео</a>
+                <a href="#">Картинки</a>
+                <a href="#">Новости</a>
+                <a href="#">Карты</a>
+                <a href="#">Маркет</a>
+                <a href="#">Переводчик</a>
+                <a href="#">Музыка</a>
+                <a href="#">ещё</a>
+            </section>
+            <input type="text" class="search-input">
+            <p>
+                Найдётся всё. Например, <span class="description">кто такие ваны</span>
+            </p>
+        </section>
+        <section class="widgets-1">
+            <article class="services">
+                <h2><a href="#">Посещаемое</a></h2>
+                <p><span class="black-links">Маркет</span> — китайская распродажа</p>
+                <p><span class="black-links">Авто.ру</span> — Туссан третьей серии</p>
+                <p><span class="black-links">Недвижимость</span> — продажа студии</p>
+                <p><span class="black-links">Работа</span> — охранником</p>
+                <p><span class="black-links">Здоровье</span> — врач на связи</p>
+                <p><span class="black-links">Коллекции</span> — как мелировать волосы</p>
+                <p><span class="black-links">Авиабилеты</span> — из Екатеринбурга</p>
+            </article>
+            <article class="jokes">
+                <h2><a href="#">Лучшие анекдоты</a></h2>
+                <p class="joke">
+                    Вас лечить хорошо или бесплатно
+                </p>
+                <p class="joke">
+                    Мама собирает сыну обед в школу:<br>
+                    — Вот, положила тебе в ранец хлеб, колбасу и гвозди.<br>
+                    — Мам, нафига??<br>
+                    — Ну как же, берешь хлеб, кладешь на него колбасу и ешь.<br>
+                    — А гвозди?<br>
+                    — Так вот же они!<br> 
+                </p>
+            </article>
+        </section>
+        <section class="widgets-2">
+            <article class="tv">
+                <h2><a href="#">Телепрограмма</a></h2>
+                <p>20:00 Петровка, 38 <span class="description">ТВ Центр</span></p>
+                <p>20:00 Мерцающий <span class="description">РЕН ТВ</span></p>
+                <p>20:00 Психологини <span class="description">СТС</span></p>
+                <p>20:00 Дыши со мной 41 <span class="description">Домашний</span></p>
+                <p>20:00 Новости «Четвертого… <span class="description">Четвертый канал + Пятница</span></p>
+                <p>20:00 Универ <span class="description">ТНТ</span></p>
+            </article>
+            <article class="auto-news">
+                <h2><a href="#">Автомобильные новости</a></h2>
+                <p>В Калифорнии продают «Ниву» 1980 года выпуска за $7600</p>
+                <p>Hyundai Ioniq стал лучшим женским автомобилем года</p>
+                <p>В Екатеринбурге проходят испытания троллейбуса с возможностью автономного хода</p>
+                <p>НАМИ приступил к производству предсерийной партии автомобилей проекта «Кортеж»</p>
+                <p>В Лондоне автобусы переводят на «кофейное топливо»</p>
+                <p>Региональным властям разрешат выбирать, кого пускать на выделенные полосы</p>
+                <p>В Краснодарском крае провели крестный ход против ДТП (ВИДЕО)</p>
+            </article>
+        </section>
+        <section class="widgets-3">
+            <article class="weather">
+                <h2><a href="#">Погода</a></h2>
+                <p>
+                    Ночь −2,  утро −2
+                </p>
+            </article>
+            <article class="traffic">
+                <h2><a href="#">Пробки </a><img src="./images/traffic.svg"> 1 балл</h2>
+                <p>
+                    На дорогах свободно
+                </p>
+            </article>
+            <article class="map">
+                <h2><a href="#">Карта Екатеринбурга</a></h2>
+                <p>
+                    <span class="black-links">Такси</span>
+                    <span class="black-links">Расписания</span>
+                    <span class="black-links">Междугородные&nbsp;автобусы</span>
+                </p>
+            </article>
+            <article class="poster">
+                <h2><a href="#">Афиша</a></h2>
+                <p>Prince: Sign O’ the Times <span class="description">премьера в ср</span></p>
+                <p>Тор: Рагнарёк <span class="description">фэнтези</span></p>
+                <p>Лига справедливости <span class="description">фантастика</span></p>
+                <p>Последний богатырь <span class="description">приключения</span></p>
+                <p>Убийство в Восточном… <span class="description">драма</span></p>
+                <p><span class="black-links">Концерты — Каспийский груз</span></p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
