@@ -92,7 +92,7 @@ ul
 
 .search-input
 {
-    width: 100%;
+    width: 85%;
     height: 32px;
     border: 2px solid #ffdb4d;
 }
@@ -247,6 +247,20 @@ body
 .jokes input
 {
     display: none;
+}
+
+.search-input,
+.search-button
+{
+    box-sizing: border-box;
+    height: 36px;
+}
+
+.search-button
+{
+    background: #ffdb4d;
+    border: none;
+    width: 88px;
 }
 
 .joke-1,
