@@ -3,11 +3,11 @@
     display: grid;
     grid-template-columns: auto 300px 250px 250px auto;
     grid-template-rows: 50px auto auto auto auto;
-    grid-template-areas: "s s s s s"
-                         "c d d e t"
-                         "a f f f t"
-                         "b y y y t"
-                         "b g h q t";
+    grid-template-areas: 's s s s s'
+        'c d d e t'
+        'a f f f t'
+        'b y y y t'
+        'b g h q t';
     grid-gap: 10px;
 }
 
@@ -48,7 +48,7 @@ ul
     margin-right: 20px;
 }
 
-.yandex-ad
+.yandex-themes
 {
     grid-area: e;
     margin: 10px 0;
@@ -100,7 +100,7 @@ ul
 .description
 {
     color: #999;
-    font-size: 0.8em;
+    font-size: .8em;
 }
 
 .secondary-link
@@ -204,9 +204,17 @@ body
 #show-weather-dummy:checked ~ main .weather-show,
 #show-traffic-dummy:checked ~ main .traffic-show,
 #show-map-dummy:checked ~ main .map-show,
-#show-poster-dummy:checked ~ main .poster-show
+#show-poster-dummy:checked ~ main .poster-show,
+#show-services-dummy:not(:checked) ~ main .services-hide,
+#show-jokes-dummy:not(:checked) ~ main .jokes-hide,
+#show-tv-dummy:not(:checked) ~ main .tv-hide,
+#show-auto-news-dummy:not(:checked) ~ main .auto-news-hide,
+#show-weather-dummy:not(:checked) ~ main .weather-hide,
+#show-traffic-dummy:not(:checked) ~ main .traffic-hide,
+#show-map-dummy:not(:checked) ~ main .map-hide,
+#show-poster-dummy:not(:checked) ~ main .poster-hide
 {
-    display: block;
+    display: inline-block;
 }
 
 .settings-panel img
@@ -214,17 +222,29 @@ body
     height: 10px;
 }
 
-/* .services,
-.jokes,
-.tv,
-.auto-news,
-.weather,
-.traffic,
-.map,
-.poster
+.services-show,
+.jokes-show,
+.tv-show,
+.auto-news-show,
+.weather-show,
+.traffic-show,
+.map-show,
+.poster-show
 {
     display: none;
-} */
+}
+
+.services-hide,
+.jokes-hide,
+.tv-hide,
+.auto-news-hide,
+.weather-hide,
+.traffic-hide,
+.map-hide,
+.poster-hide
+{
+    display: none;
+}
 
 .jokes-label::before
 {

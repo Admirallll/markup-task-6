@@ -26,16 +26,50 @@
                 <label for="show-settings">Настройки</label>
                 <section class="settings-panel">
                     <label for="show-services-dummy">
-                        <img src="./images/full-checkbox.ico" class="services-show">
-                        <img src="./images/empty-checkbox.ico" class="services-hide">
+                        <img src="./images/full-checkbox.ico" class="services-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="services-hide" alt="">
                         Посещаемое
                     </label><br>
-                    <label for="show-jokes-dummy">Лучшие анекдоты</label>
+                    <label for="show-jokes-dummy">
+                        <img src="./images/full-checkbox.ico" class="jokes-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="jokes-hide" alt="">
+                        Лучшие анекдоты
+                    </label><br>
+                    <label for="show-tv-dummy">
+                        <img src="./images/full-checkbox.ico" class="tv-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="tv-hide" alt="">
+                        Телепрограмма
+                    </label><br>
+                    <label for="show-auto-news-dummy">
+                        <img src="./images/full-checkbox.ico" class="auto-news-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="auto-news-hide" alt="">
+                        Автомобильные новости
+                    </label><br>
+                    <label for="show-weather-dummy">
+                        <img src="./images/full-checkbox.ico" class="weather-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="weather-hide" alt="">
+                        Погода
+                    </label><br>
+                    <label for="show-traffic-dummy">
+                        <img src="./images/full-checkbox.ico" class="traffic-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="traffic-hide" alt="">
+                        Пробки
+                    </label><br>
+                    <label for="show-map-dummy">
+                        <img src="./images/full-checkbox.ico" class="map-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="map-hide" alt="">
+                        Карта Екатеринбурга
+                    </label><br>
+                    <label for="show-poster-dummy">
+                        <img src="./images/full-checkbox.ico" class="poster-show" alt="">
+                        <img src="./images/empty-checkbox.ico" class="poster-hide" alt="">
+                        Афиша
+                    </label><br>
                 </section>
             </section>
         </section>
         <section class="logo">
-            <img src="./images/logo.svg">
+            <img src="./images/logo.svg" alt="логотип яндекса">
         </section>
         <section class="news-section">
             <header>
@@ -55,15 +89,15 @@
                 <span class="black-links">НЕФТЬ</span> 62,01 <span class="description">−1,16%</span>
             </p>
         </section>
-        <section class="yandex-ad">
-            <img src="./images/themes-ad.png">
-            <p>
+        <section class="yandex-themes">
+            <img src="./images/themes-ad.png" alt="реклама">
                 <h2><a href="#">Красивые фоны для вашего браузера</a></h2>
+            <p>
                 Элементы Яндекса
             </p>
         </section>
         <section class="advertisement">
-            <img src="./images/yandex-car.gif">
+            <img src="./images/yandex-car.gif" alt="яндекс такси">
         </section>
         <section class="search-field">
             <section class="navigation-links">
@@ -84,7 +118,7 @@
             </p>
         </section>
         <section class="widgets-1">
-            <article class="services">
+            <article class="services-show services">
                 <h2><a href="#">Посещаемое</a></h2>
                 <p><span class="black-links">Маркет</span> — китайская распродажа</p>
                 <p><span class="black-links">Авто.ру</span> — Туссан третьей серии</p>
@@ -94,7 +128,7 @@
                 <p><span class="black-links">Коллекции</span> — как мелировать волосы</p>
                 <p><span class="black-links">Авиабилеты</span> — из Екатеринбурга</p>
             </article>
-            <article class="jokes">
+            <article class="jokes-show jokes">
                 <h2><a href="#">Лучшие анекдоты</a></h2>
                 <input type="radio" name="jokes" id="joke-1-controller" checked>
                 <input type="radio" name="jokes" id="joke-2-controller">
@@ -137,7 +171,7 @@
             </article>
         </section>
         <section class="widgets-2">
-            <article class="tv">
+            <article class="tv-show">
                 <h2><a href="#">Телепрограмма</a></h2>
                 <p>20:00 Петровка, 38 <span class="description">ТВ Центр</span></p>
                 <p>20:00 Мерцающий <span class="description">РЕН ТВ</span></p>
@@ -146,7 +180,7 @@
                 <p>20:00 Новости «Четвертого… <span class="description">Четвертый канал + Пятница</span></p>
                 <p>20:00 Универ <span class="description">ТНТ</span></p>
             </article>
-            <article class="auto-news">
+            <article class="auto-news auto-news-show">
                 <h2><a href="#">Автомобильные новости</a></h2>
                 <p>В Калифорнии продают «Ниву» 1980 года выпуска за $7600</p>
                 <p>Hyundai Ioniq стал лучшим женским автомобилем года</p>
@@ -158,19 +192,19 @@
             </article>
         </section>
         <section class="widgets-3">
-            <article class="weather">
+            <article class="weather-show">
                 <h2><a href="#">Погода</a></h2>
                 <p>
                     Ночь −2,  утро −2
                 </p>
             </article>
-            <article class="traffic">
-                <h2><a href="#">Пробки </a><img src="./images/traffic.svg"> 1 балл</h2>
+            <article class="traffic-show">
+                <h2><a href="#">Пробки</a><img src="./images/traffic.svg" alt="пробки">1 балл</h2>
                 <p>
                     На дорогах свободно
                 </p>
             </article>
-            <article class="map">
+            <article class="map-show">
                 <h2><a href="#">Карта Екатеринбурга</a></h2>
                 <p>
                     <span class="black-links">Такси</span>
@@ -178,7 +212,7 @@
                     <span class="black-links">Междугородные&nbsp;автобусы</span>
                 </p>
             </article>
-            <article class="poster">
+            <article class="poster-show">
                 <h2><a href="#">Афиша</a></h2>
                 <p>Prince: Sign O’ the Times <span class="description">премьера в ср</span></p>
                 <p>Тор: Рагнарёк <span class="description">фэнтези</span></p>
