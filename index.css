@@ -7,7 +7,7 @@
         'c d d e t'
         'a f f f t'
         'b y y y t'
-        'b g h q t';
+        'b g g g t';
     grid-gap: 10px;
 }
 
@@ -75,19 +75,25 @@ ul
     margin: 10px 0;
 }
 
-.widgets-1
+.widgets
 {
     grid-area: g;
+    display: flex;
 }
 
-.widgets-2
+.widgets-1 article
 {
-    grid-area: h;
+    width: 250px;
 }
 
-.widgets-3
+.widgets-2 article
 {
-    grid-area: q;
+    width: 300px;
+}
+
+.widgets-3 article
+{
+    width: 300px;
 }
 
 .search-input
