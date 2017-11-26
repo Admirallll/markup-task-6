@@ -1,7 +1,7 @@
 .layout
 {
     display: grid;
-    grid-template-columns: auto 300px 250px 250px auto;
+    grid-template-columns: auto 300px 300px 300px auto;
     grid-template-rows: 50px auto auto auto auto;
     grid-template-areas: 's s s s s'
         'c d d e t'
@@ -81,6 +81,11 @@ ul
     display: flex;
 }
 
+.widgets article
+{
+    padding: 0 10px;
+}
+
 .widgets-1 article
 {
     width: 250px;
@@ -93,7 +98,12 @@ ul
 
 .widgets-3 article
 {
-    width: 300px;
+    width: 250px;
+}
+
+.widgets-3 > section
+{
+    display: block;
 }
 
 .search-input
@@ -106,6 +116,11 @@ ul
 .description
 {
     color: #999;
+    font-weight: 100;
+}
+
+h2 .description
+{
     font-size: .8em;
 }
 
@@ -249,7 +264,7 @@ body
 #show-map-dummy:not(:checked) ~ main .map-hide,
 #show-poster-dummy:not(:checked) ~ main .poster-hide
 {
-    display: inline-block;
+    display: block;
 }
 
 .settings-panel img
@@ -317,6 +332,18 @@ body
     background: #ffdb4d;
     border: none;
     width: 88px;
+}
+
+#show-services-dummy:checked ~ main .settings-panel .services-show,
+#show-jokes-dummy:checked ~ main .settings-panel .jokes-show,
+#show-tv-dummy:checked ~ main .settings-panel .tv-show,
+#show-auto-news-dummy:checked ~ main .settings-panel .auto-news-show,
+#show-weather-dummy:checked ~ main .settings-panel .weather-show,
+#show-traffic-dummy:checked ~ main .settings-panel .traffic-show,
+#show-map-dummy:checked ~ main .settings-panel .map-show,
+#show-poster-dummy:checked ~ main .settings-panel .poster-show
+{
+    display: inline-block;
 }
 
 .jokes article
