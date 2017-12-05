@@ -97,6 +97,7 @@ ul
 .widget
 {
     margin-right: 10px;
+    max-width: 300px;
 }
 
 .widgets-1 article
@@ -112,11 +113,6 @@ ul
 .widgets-3 article
 {
     width: 250px;
-}
-
-.widgets-3 > section
-{
-    display: block;
 }
 
 .search-input
@@ -277,7 +273,7 @@ body
 #show-map-dummy:not(:checked) ~ main .map-hide,
 #show-poster-dummy:not(:checked) ~ main .poster-hide
 {
-    display: block;
+    display: inline-block;
 }
 
 .settings-panel img
@@ -352,18 +348,6 @@ body
     width: 19px;
     height: 19px;
     float: left;
-}
-
-#show-services-dummy:checked ~ main .settings-panel .services-show,
-#show-jokes-dummy:checked ~ main .settings-panel .jokes-show,
-#show-tv-dummy:checked ~ main .settings-panel .tv-show,
-#show-auto-news-dummy:checked ~ main .settings-panel .auto-news-show,
-#show-weather-dummy:checked ~ main .settings-panel .weather-show,
-#show-traffic-dummy:checked ~ main .settings-panel .traffic-show,
-#show-map-dummy:checked ~ main .settings-panel .map-show,
-#show-poster-dummy:checked ~ main .settings-panel .poster-show
-{
-    display: inline-block;
 }
 
 .jokes article
