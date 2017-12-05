@@ -22,6 +22,19 @@
     margin: 15px 0 0 22px;
 }
 
+.tv-image
+{
+    vertical-align: middle;
+    margin: -3px 0 -3px 10px;
+}
+
+.traffic-image,
+.weather-image
+{
+    vertical-align: middle;
+    margin: -3px 0;
+}
+
 ul
 {
     padding-left: 0;
