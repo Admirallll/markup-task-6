@@ -19,6 +19,7 @@
 .user-info
 {
     grid-area: s;
+    margin: 15px 0 0 22px;
 }
 
 ul
@@ -38,8 +39,7 @@ ul
     float: left;
     color: #999;
     grid-area: w;
-    margin-top: 8px;
-    padding: 0 18px;
+    padding: 0 0 18px;
 }
 
 .news-section
@@ -332,6 +332,13 @@ body
     background: #ffdb4d;
     border: none;
     width: 88px;
+}
+
+.city-arrow
+{
+    width: 19px;
+    height: 19px;
+    float: left;
 }
 
 #show-services-dummy:checked ~ main .settings-panel .services-show,
