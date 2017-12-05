@@ -94,9 +94,9 @@ ul
     display: flex;
 }
 
-.widgets article
+.widget
 {
-    padding: 0 10px;
+    margin-right: 10px;
 }
 
 .widgets-1 article
